@@ -25,6 +25,7 @@
 		83EAE8C415DD04B6004F093E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAE8BF15DD048A004F093E /* CoreVideo.framework */; };
 		83EAE8C515DD04BD004F093E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAE8C115DD0491004F093E /* QuartzCore.framework */; };
 		83EAE8C815DD0554004F093E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAE8C615DD0538004F093E /* libiconv.dylib */; };
+		83EAE8CA15DD15C1004F093E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAE8C915DD15C1004F093E /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		83EAE8BF15DD048A004F093E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		83EAE8C115DD0491004F093E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		83EAE8C615DD0538004F093E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		83EAE8C915DD15C1004F093E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				83EAE8C315DD04AF004F093E /* CoreMedia.framework in Frameworks */,
 				83EAE8C415DD04B6004F093E /* CoreVideo.framework in Frameworks */,
 				83EAE8C515DD04BD004F093E /* QuartzCore.framework in Frameworks */,
+				83EAE8CA15DD15C1004F093E /* AudioToolbox.framework in Frameworks */,
 				83EAE8C815DD0554004F093E /* libiconv.dylib in Frameworks */,
 				83EAE8B515DD0419004F093E /* libzbar.a in Frameworks */,
 			);
@@ -115,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				83EAE8C615DD0538004F093E /* libiconv.dylib */,
+				83EAE8C915DD15C1004F093E /* AudioToolbox.framework */,
 				83EAE8C115DD0491004F093E /* QuartzCore.framework */,
 				83EAE8BF15DD048A004F093E /* CoreVideo.framework */,
 				83EAE8BD15DD0482004F093E /* CoreMedia.framework */,

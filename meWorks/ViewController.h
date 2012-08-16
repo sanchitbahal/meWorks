@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <ZBarReaderDelegate>
+@interface ViewController : UIViewController <ZBarReaderDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *scannedImage;
 @property (strong, nonatomic) IBOutlet UITextView *scannedText;

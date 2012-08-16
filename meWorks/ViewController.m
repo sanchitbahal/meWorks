@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AudioToolbox/AudioToolbox.h"
 
 @interface ViewController ()
 
@@ -58,17 +59,25 @@
     id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;
     for(symbol in results)
-        // EXAMPLE: just grab the first barcode
         break;
     
-    // EXAMPLE: do something useful with the barcode data
     scannedText.text = symbol.data;
-    
-    // EXAMPLE: do something useful with the barcode image
     scannedImage.image = [info objectForKey: UIImagePickerControllerOriginalImage];
     
-    // ADD: dismiss the controller (NB dismiss from the *reader*!)
     [picker dismissModalViewControllerAnimated:YES];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"QR Code scanned successfully" message:@"Turn ON vibration mode?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        // Turn viration ON
+        NSLog(@"Button YES pressed.");
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+    }
 }
 
 @end

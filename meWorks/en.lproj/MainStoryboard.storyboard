@@ -29,7 +29,7 @@
                                     <action selector="scanButton:" destination="2" eventType="touchUpInside" id="mSe-sK-uJ8"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Press the button below to scan." id="ujy-xc-n1j">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Press the button below to scan any QR code." id="ujy-xc-n1j">
                                 <rect key="frame" x="20" y="311" width="280" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
