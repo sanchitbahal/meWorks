@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ZBarReaderDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *scannedImage;
+@property (strong, nonatomic) IBOutlet UITextView *scannedText;
+- (IBAction)scanButton:(id)sender;
 
 @end
