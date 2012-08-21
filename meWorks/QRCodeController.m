@@ -8,6 +8,7 @@
 
 #import "QRCodeController.h"
 #import "Phone.h"
+#import "QRCodeManager.h"
 
 @implementation QRCodeController
 
@@ -47,12 +48,16 @@ Phone *phone;
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     NSString *scannedCode = [self getScannedCode:info];
+    BOOL isMeetingRoomQrCode = [QRCodeManager isMeetingRoomQrCode:scannedCode];
     //scannedImage.image = [info objectForKey: UIImagePickerControllerOriginalImage];
     
     [picker dismissModalViewControllerAnimated:YES];
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:scannedCode message:@"Turn vibration ON?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
-    [alertView show];
+    if (isMeetingRoomQrCode)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:scannedCode message:@"Turn vibration ON?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+        [alertView show];
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

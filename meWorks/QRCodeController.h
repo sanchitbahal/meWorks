@@ -12,5 +12,6 @@
 
 - (UIViewController *)prepareQrCodeReader;
 - (NSString *)getScannedCode:(NSDictionary *)info;
+- (BOOL)isMeetingRoomQrCode:(NSString *)scannedQrCode;
 
 @end
