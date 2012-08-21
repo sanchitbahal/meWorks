@@ -18,6 +18,7 @@
 		8346580D15E35CB100B6BBE1 /* QRCodeManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8346580C15E35CB100B6BBE1 /* QRCodeManager.h */; };
 		8346580F15E35CB100B6BBE1 /* QRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8346580E15E35CB100B6BBE1 /* QRCodeManager.m */; };
 		8346581615E35F6200B6BBE1 /* QRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8346580E15E35CB100B6BBE1 /* QRCodeManager.m */; };
+		8389662715E39CB100D151BB /* libmeWorks.business.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8346580715E35CB100B6BBE1 /* libmeWorks.business.a */; };
 		838ADFF115DCE4CE00D36B75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838ADFF015DCE4CE00D36B75 /* UIKit.framework */; };
 		838ADFF315DCE4CE00D36B75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838ADFF215DCE4CE00D36B75 /* Foundation.framework */; };
 		838ADFF515DCE4CF00D36B75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838ADFF415DCE4CE00D36B75 /* CoreGraphics.framework */; };
@@ -168,6 +169,7 @@
 				83EAE8CA15DD15C1004F093E /* AudioToolbox.framework in Frameworks */,
 				83EAE8C815DD0554004F093E /* libiconv.dylib in Frameworks */,
 				83EAE8B515DD0419004F093E /* libzbar.a in Frameworks */,
+				8389662715E39CB100D151BB /* libmeWorks.business.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +686,7 @@
 				8346581215E35CB100B6BBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838ADFE615DCE4CE00D36B75 /* Build configuration list for PBXProject "meWorks" */ = {
 			isa = XCConfigurationList;
