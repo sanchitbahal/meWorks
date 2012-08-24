@@ -13,8 +13,8 @@
 
 - (void)testForAValidMeetingRoom
 {
-    BOOL isMeetingRoomQrCode = [QRCodeManager isMeetingRoomQrCode:@"foo"];
-    GHAssertFalse(isMeetingRoomQrCode, @"Assertion failed");
+    GHAssertTrue([QRCodeManager isMeetingRoomQrCode:@"Chandni Chowk"], @"Assertion failed");
+    GHAssertFalse([QRCodeManager isMeetingRoomQrCode:@"foo"], @"Assertion failed");
 }
 
 @end
