@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GHUnitIOS/GHUnit.h>
+#import "GHUnitIOS/GHUnit.h"
 
 @interface QRCodeManagerTest : GHTestCase
 
