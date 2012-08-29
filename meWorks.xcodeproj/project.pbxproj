@@ -12,7 +12,6 @@
 		8346579E15E34A4900B6BBE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838ADFF415DCE4CE00D36B75 /* CoreGraphics.framework */; };
 		834657A415E34A4900B6BBE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 834657A215E34A4900B6BBE1 /* InfoPlist.strings */; };
 		834657A615E34A4900B6BBE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834657A515E34A4900B6BBE1 /* main.m */; };
-		834657B015E34BA200B6BBE1 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834657AF15E34BA200B6BBE1 /* GHUnitIOS.framework */; };
 		834657B315E3507600B6BBE1 /* QRCodeManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 834657B215E3507600B6BBE1 /* QRCodeManagerTest.m */; };
 		8346580815E35CB100B6BBE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838ADFF215DCE4CE00D36B75 /* Foundation.framework */; };
 		8346580D15E35CB100B6BBE1 /* QRCodeManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8346580C15E35CB100B6BBE1 /* QRCodeManager.h */; };
@@ -40,6 +39,7 @@
 		83EAE8CA15DD15C1004F093E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EAE8C915DD15C1004F093E /* AudioToolbox.framework */; };
 		83EAE8CD15DE0AD5004F093E /* Phone.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EAE8CC15DE0AD4004F093E /* Phone.m */; };
 		83EAE8D015DE162D004F093E /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EAE8CF15DE162D004F093E /* QRCodeController.m */; };
+		83F153BD15EE45B70095F747 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F153BC15EE45B70095F747 /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,6 @@
 		834657A315E34A4900B6BBE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		834657A515E34A4900B6BBE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		834657A715E34A4900B6BBE1 /* tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tests-Prefix.pch"; sourceTree = "<group>"; };
-		834657AF15E34BA200B6BBE1 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../../Downloads/GHUnitIOS.framework; sourceTree = "<group>"; };
 		834657B215E3507600B6BBE1 /* QRCodeManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeManagerTest.m; sourceTree = "<group>"; };
 		8346580715E35CB100B6BBE1 /* libmeWorks.business.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmeWorks.business.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8346580B15E35CB100B6BBE1 /* meWorks.business-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "meWorks.business-Prefix.pch"; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 		83EAE8CC15DE0AD4004F093E /* Phone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phone.m; sourceTree = "<group>"; };
 		83EAE8CE15DE162D004F093E /* QRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
 		83EAE8CF15DE162D004F093E /* QRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
+		83F153BC15EE45B70095F747 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 				8346579C15E34A4900B6BBE1 /* UIKit.framework in Frameworks */,
 				8346579D15E34A4900B6BBE1 /* Foundation.framework in Frameworks */,
 				8346579E15E34A4900B6BBE1 /* CoreGraphics.framework in Frameworks */,
-				834657B015E34BA200B6BBE1 /* GHUnitIOS.framework in Frameworks */,
+				83F153BD15EE45B70095F747 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +240,8 @@
 		838ADFEF15DCE4CE00D36B75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83F153BC15EE45B70095F747 /* GHUnitIOS.framework */,
 				83EAE8C615DD0538004F093E /* libiconv.dylib */,
-				834657AF15E34BA200B6BBE1 /* GHUnitIOS.framework */,
 				83EAE8C915DD15C1004F093E /* AudioToolbox.framework */,
 				83EAE8C115DD0491004F093E /* QuartzCore.framework */,
 				83EAE8BF15DD048A004F093E /* CoreVideo.framework */,
@@ -553,6 +553,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads\"",
+					"\"$(SRCROOT)/ZBarSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tests/tests-Prefix.pch";
@@ -573,6 +575,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads\"",
+					"\"$(SRCROOT)/ZBarSDK\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tests/tests-Prefix.pch";
